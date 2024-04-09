@@ -19,7 +19,7 @@ Client-side filters are easy to bypass -- we can see the code for them, even if 
 ```
 In this instance, the code is looking for the last period (.) in the file name and uses that to confirm the extension, so that is what we'll be trying to bypass here. Other ways the code could be working include: searching for the first period in the file name, or splitting the file name at each period and checking to see if any blacklisted extensions show up. 
 
-We can see that the code is filtering out the .php and .phtml extensions, so if we want to upload a PHP script we're going to have to find another extension. The wikipedia page for [PHP](https://en.wikipedia.org/wiki/PHP) gives us a few common extensions that we can try; however, there are actually a variety of other more rarely used extensions available that webservers may nonetheless still recognise. These include: .php3, .php4, .php5, .php7, .phps, .php-s, .pht and .phar. Many of these bypass the filter (which only blocks.php and .phtml).
+We can see that the code is filtering out the .php and .phtml extensions, so if we want to upload a PHP script we're going to have to find another extension. The wikipedia page for [PHP](https://en.wikipedia.org/wiki/PHP) gives us a few common extensions that we can try; however, there are actually a variety of other more rarely used extensions available that webservers may nonetheless still recognise. These include: **.php3, .php4, .php5, .php7, .phps, .php-s, .pht and .phar.** Many of these bypass the filter (which only blocks.php and .phtml).
 
 Changing the **shell file's extension** to required file we can upload the file in restricted file in the server.
 
